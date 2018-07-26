@@ -1,0 +1,67 @@
+ body, html {
+ 	height: 100%;
+ }
+
+ body {
+    background-image: url("../images/bg.jpg");
+
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+ .navbar {
+  min-height: 80px;
+  background-color: #f1eff2;
+}
+
+.navbar a {
+	font-size: 30px;
+	font-weight: lighter;
+}
+
+.navbar .navbar-brand {
+	padding: 0px;
+	font-size: 35px;
+	letter-spacing: 5px;
+}
+
+.navbar li {
+	padding-right: 50px;
+}
+
+#search {
+	height: 3.8rem;
+}
+
+#login-panel {
+	opacity: 0.5;
+}
+
+#login-panel .card-body .card-title {
+	letter-spacing: 50px;
+}
+
+.page-title {
+	letter-spacing: 5px;
+}
+
+.table-state-name {
+	letter-spacing: 30px;
+	font-size: 25px;
+}
+
+.table-applicant-name {
+	letter-spacing: 5px;
+	font-size: 25px
+}
+
+.table thead {
+	letter-spacing: 15px;
+}
+
+
