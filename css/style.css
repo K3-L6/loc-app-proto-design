@@ -50,7 +50,7 @@
 	letter-spacing: 5px;
 }
 
-.table-state-name {
+.table-data-big {
 	letter-spacing: 30px;
 	font-size: 25px;
 }
@@ -62,6 +62,25 @@
 
 .table thead {
 	letter-spacing: 15px;
+}
+
+.myModal {
+	background-color: #fff;
+	opacity: 0.9;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 50px;
+	display: none;
+}
+
+.myModalClose {
+	position: absolute;
+	top: 0;
+	left: 95%;
+	margin-top: 10px;
 }
 
 

@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	
+
 	<!-- BOOTSTRAP CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
+
 	<!-- FONT AWESOME -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	
+
 	<!-- GOOGLE FONTS	 -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
 
@@ -19,106 +19,142 @@
 
 </head>
 <body>
-	
-	<nav class="navbar navbar-expand-sm navbar-light mb-5">
-	  
-	  
-		 <a class="navbar-brand" href="login.html"> > LOC APP < </a>
 
-		 <ul class="navbar-nav ml-auto">
-		    
-		 	<li class="nav-item">
-		    	<a class="nav-link" href="location.html">LOCATION</a>
-		  	</li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="applicant.html">APPLICANT</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="#">SETTINGS</a>
-		    </li>
-		    
-		  </ul>
-		
+	<nav class="navbar navbar-expand-sm navbar-light mb-5">
+
+
+		<a class="navbar-brand" href="login.html"> > LOC APP < </a>
+
+		<ul class="navbar-nav ml-auto">
+
+			<li class="nav-item">
+				<a class="nav-link" href="location.html">LOCATION</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="applicant.html">APPLICANT</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">SETTINGS</a>
+			</li>
+
+		</ul>
+
 	</nav>
 
-	
+
 	<div class="container">
-		
+
 		<div class="row">
-			
+
 			<div class="col">
 				<h1 class="display-4 text-center page-title">LOCATION LIST</h1>
 			</div>
 
 			<div class="col">
 				<div class="form-group">
-				  <input type="text" placeholder="Search location here" class="form-control text-center" id="search">
+					<input type="text" placeholder="Search location here" class="form-control text-center" id="search">
 				</div>
 			</div>
 
 
 		</div>
-		
+
+		<!-- Location List Table -->
 		<table class="table text-center">
-		    <thead>
-		      <tr>
-		        <th width="10%">ID</th>
-		        <th width="80%">STATE NAME</th>
-		        <th width="10%">ACTION</th>
-		      </tr>
-		    </thead>
-		    <tbody>
-		      
-		      <tr>
-		        <td>1</td>
-		        <td class="table-state-name">ALABAMA</td>
-		        <td>
-		        	<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
-		        </td>
-		      </tr>
+			<thead>
+				<tr>
+					<th width="10%">ID</th>
+					<th width="80%">STATE NAME</th>
+					<th width="10%">ACTION</th>
+				</tr>
+			</thead>
+			<tbody>
 
-		      <tr>
-		        <td>2</td>
-		        <td class="table-state-name">ALASKA</td>
-		        <td>
-		        	<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
-		        </td>
-		      </tr>
+				<tr>
+					<td>1</td>
+					<td class="table-data-big">ALABAMA</td>
+					<td>
+						<button class="btn btn-dark rounded-0" onclick="openModal()">
+							<i class="fas fa-info"></i>
+						</button>
+					</td>
+				</tr>
 
-		      <tr>
-		        <td>3</td>
-		        <td class="table-state-name">ARIZONA</td>
-		        <td>
-		        	<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
-		        </td>
-		      </tr>
+				<tr>
+					<td>2</td>
+					<td class="table-data-big">ALASKA</td>
+					<td>
+						<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
+					</td>
+				</tr>
 
-		      <tr>
-		        <td>5</td>
-		        <td class="table-state-name">ARKANSAS</td>
-		        <td>
-		        	<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
-		        </td>
-		      </tr>
+				<tr>
+					<td>3</td>
+					<td class="table-data-big">ARIZONA</td>
+					<td>
+						<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
+					</td>
+				</tr>
 
-		      <tr>
-		        <td>5</td>
-		        <td class="table-state-name">ALABAMA</td>
-		        <td>
-		        	<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
-		        </td>
-		      </tr>
+				<tr>
+					<td>4</td>
+					<td class="table-data-big">ARKANSAS</td>
+					<td>
+						<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
+					</td>
+				</tr>
 
-		      
+				<tr>
+					<td>5</td>
+					<td class="table-data-big">CALIFORNIA</td>
+					<td>
+						<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
+					</td>
+				</tr>
 
-
-		      
-		    </tbody>
-		  </table>
+			</tbody>
+		</table>
 
 	</div>
 
+	<!-- Whole Page Modal -->
+	<div class="myModal text-center" id="myModal">
+		<h1 class="display-4">Requirements For Alabama</h1>
+		<table class="table text-center">
+			<thead>
+				<tr>
+					<th width="80%"></th>
+				</tr>
+			</thead>
+			<tbody>
 
+				<tr>
+					<td class="table-data-big">NBI CLEARANCE</td>
+				</tr>
+
+				<tr>
+					<td class="table-data-big">NSO BIRTH CERTIFICATE</td>
+				</tr>
+
+				<tr>
+					<td class="table-data-big">MEDICAL CERTIFICATE</td>
+				</tr>
+
+				<tr>
+					<td class="table-data-big">CERTIFICATE OF CONTRACT</td>
+				</tr>
+
+				<tr>
+					<td class="table-data-big">ANY GOVERMENT ID</td>
+				</tr>
+
+			</tbody>
+		</table>
+		<hr><hr class="mt-4">
+		<button class="btn btn-light btn-lg rounded-0 myModalClose" onclick="closeModal()">
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
 
 
 
@@ -127,5 +163,14 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script>
+		function openModal() {
+			document.getElementById('myModal').style.display = "block";
+		}
+		function closeModal() {
+			document.getElementById('myModal').style.display = "none";
+		}
+	</script>
 </body>
 </html>
