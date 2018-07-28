@@ -145,11 +145,9 @@
 	<div class="wholePageModal text-center animated faster" id="registerModal">
 		<h1 class="display-4">NEW APPLICANT REGISTER</h1>
 
-		<hr><hr class="mt-4">
+		<hr>
 
 		<h1 class="display-1">REGISTRATION<br>FORM<br>GOES<br>HERE</h1>
-
-		<hr><hr class="mt-4">
 
 		<button class="btn btn-light btn-lg rounded-0 wholePageModalClose" onclick="closeRegisterModal()">
 			<i class="fas fa-times"></i>
@@ -159,11 +157,11 @@
 	<div class="wholePageModal text-center animated faster" id="applicantModal">
 		<h1 class="display-4">JOHN KENNETH LISING'S PROFILE</h1>
 
-		<hr><hr class="mt-4">
+		<hr>
 
-		<h1 class="display-1">APPLICANT<br>INFORMATION<br>GOES<br>HERE</h1>
+		<h1 class="display-1">APPLICANT<br>INFORMATION<br>GOES<br>1</h1>
 
-		<hr><hr class="mt-4">
+
 
 		<button class="btn btn-light btn-lg rounded-0 wholePageModalClose" onclick="closeApplicantModal()">
 			<i class="fas fa-times"></i>
@@ -178,25 +176,29 @@
 	<script>
 		function openRegisterModal() {
 			var modal = document.getElementById('registerModal');
+			modal.style.opacity = 1;
 			modal.classList.remove('slideOutUp');
 			modal.classList.add('slideInDown');
 			modal.style.display = 'block';
 		}
 		function closeRegisterModal() {
 			var modal = document.getElementById('registerModal');
+			modal.style.opacity = 0.3;
 			modal.classList.remove('slideInDown');
 			modal.classList.add('slideOutUp');
 		}
 		function openApplicantModal() {
 			var modal = document.getElementById('applicantModal');
-			modal.classList.remove('slideOutLeft');
-			modal.classList.add('slideInLeft');
+			modal.style.opacity = 1;
+			modal.classList.remove('slideOutUp');
+			modal.classList.add('slideInDown');
 			modal.style.display = 'block';
 		}
 		function closeApplicantModal() {
 			var modal = document.getElementById('applicantModal');
-			modal.classList.remove('slideInLeft');
-			modal.classList.add('slideOutLeft');
+			modal.style.opacity = 0.3;
+			modal.classList.remove('slideInDown');
+			modal.classList.add('slideOutUp');
 		}
 	</script>
 </body>
