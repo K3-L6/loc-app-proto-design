@@ -8,9 +8,6 @@
 	<!-- BOOTSTRAP CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<!-- ANIMATE CSS -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-
 	<!-- FONT AWESOME -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -85,7 +82,7 @@
 					<td>ALABAMA</td>
 					<td class="text-info">VERIFICATION</td>
 					<td>
-						<button class="btn btn-dark rounded-0" onclick="openApplicantModal()">
+						<button class="btn btn-dark rounded-0" data-toggle="modal" data-target="#applicantInformationModal">
 							<i class="fas fa-info"></i>
 						</button>
 					</td>
@@ -134,104 +131,44 @@
 			</tbody>
 		</table>
 
-		<button class="btn btn-lg btn-block btn-dark" onclick="openRegisterModal()">
+		<button class="btn btn-lg btn-block btn-dark" data-toggle="modal" data-target="#applicantRegistrationModal">
 			REGISTER NEW APPLICANT
 		</button>
-
 
 	</div>
 
 	<!-- REGISTER APPLICANT MODAL -->
-	<div class="wholePageModal text-center animated faster" id="registerModal">
-		<h1 class="display-4">NEW APPLICANT REGISTER</h1>
-
-		<hr>
-
-		<h1 class="display-1">REGISTRATION<br>FORM<br>GOES<br>HERE</h1>
-
-		<button class="btn btn-light btn-lg rounded-0 wholePageModalClose" onclick="closeRegisterModal()">
-			<i class="fas fa-times"></i>
-		</button>
+	<div class="modal fade" id="applicantRegistrationModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-full" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title display-4 mx-auto">APPLICANT REGISTRATION FORM</h5>
+					<button type="button" class="close mt-1" data-dismiss="modal" aria-label="Close">
+						<i class="fas fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body p-4" id="result">
+					<h1 class="display-1 text-center">REGISTRATION<br>FORM<br>GOES<br>HERE</h1>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- APPLICANT PROFILE MODAL -->
-	<div class="wholePageModal text-center animated faster" id="applicantModal">
-		<h1 class="display-3">JOHN KENNETH LISING'S PROFILE</h1>
-		<hr>
-
-		<h1 class="display-4">TARGET LOCATION</h1>
-		<h1>ALABAMA</h1>
-		<hr>
-
-		<h1 class="display-4">AVAILABLE LOCATION</h1>
-		<table class="table text-center">
-			<thead>
-				<tr>
-					<th width="100%"></th>
-				</tr>
-			</thead>
-			<tbody>
-
-				<tr>
-					<td class="table-data-big">ALABAMA</td>
-				</tr>
-
-				<tr>
-					<td class="table-data-big">ALASKA</td>
-				</tr>
-
-				<tr>
-					<td class="table-data-big">ARIZONA</td>
-				</tr>
-
-				<tr>
-					<td class="table-data-big">ARKANSAS</td>
-				</tr>
-
-				<tr>
-					<td class="table-data-big">CALIFORNIA</td>
-				</tr>
-
-			</tbody>
-		</table>
-		<hr>
-
-		<h1 class="display-4">SUBMITED REQUIREMENT'S</h1>
-		<table class="table text-center">
-			<thead>
-				<tr>
-					<th width="100%"></th>
-				</tr>
-			</thead>
-			<tbody>
-
-				<tr>
-					<td class="table-data-big">NBI CLEARANCE</td>
-				</tr>
-
-				<tr>
-					<td class="table-data-big">NSO BIRTH CERTIFICATE</td>
-				</tr>
-
-				<tr>
-					<td class="table-data-big">MEDICAL CERTIFICATE</td>
-				</tr>
-
-				<tr>
-					<td class="table-data-big">CERTIFICATE OF CONTRACT</td>
-				</tr>
-
-				<tr>
-					<td class="table-data-big">VOTER'S ID</td>
-				</tr>
-
-			</tbody>
-		</table>
-		<hr>
-
-		<button class="btn btn-light btn-lg rounded-0 wholePageModalClose" onclick="closeApplicantModal()">
-			<i class="fas fa-times"></i>
-		</button>
+	<div class="modal fade" id="applicantInformationModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-full" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title display-4 mx-auto">JOHN KENNETH LISING'S PROFILE</h5>
+					<button type="button" class="close mt-1" data-dismiss="modal" aria-label="Close">
+						<i class="fas fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body p-4" id="result">
+					<h1 class="display-1 text-center">MORE<br>INFORMATION<br>ABOUT<br>APPLICANT<br>HERE</h1>
+				</div>
+			</div>
+		</div>
 	</div>
 
 
@@ -239,33 +176,5 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	<script>
-		function openRegisterModal() {
-			var modal = document.getElementById('registerModal');
-			modal.style.opacity = 1;
-			modal.classList.remove('slideOutUp');
-			modal.classList.add('slideInDown');
-			modal.style.display = 'block';
-		}
-		function closeRegisterModal() {
-			var modal = document.getElementById('registerModal');
-			modal.style.opacity = 0.3;
-			modal.classList.remove('slideInDown');
-			modal.classList.add('slideOutUp');
-		}
-		function openApplicantModal() {
-			var modal = document.getElementById('applicantModal');
-			modal.style.opacity = 1;
-			modal.classList.remove('slideOutUp');
-			modal.classList.add('slideInDown');
-			modal.style.display = 'block';
-		}
-		function closeApplicantModal() {
-			var modal = document.getElementById('applicantModal');
-			modal.style.opacity = 0.3;
-			modal.classList.remove('slideInDown');
-			modal.classList.add('slideOutUp');
-		}
-	</script>
 </body>
 </html>

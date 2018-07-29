@@ -6,7 +6,6 @@
     background-image: url("../images/bg.jpg");
 
 	height: 100%;
-
 	background-position: center;
 	background-attachment: fixed;
     background-repeat: no-repeat;
@@ -14,6 +13,7 @@
 
     font-family: 'Raleway', sans-serif;
 }
+
 
  .navbar {
   min-height: 80px;
@@ -65,25 +65,27 @@
 	letter-spacing: 15px;
 }
 
-.wholePageModal {
-	background-image: url("../images/modal-bg.jpg");
-	background-position: center;
-    background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	display: none;
+.modal-full {
+    min-width: 100%;
+	margin: 0;
 }
 
-.wholePageModalClose {
+.modal-full .modal-content {
+	min-height: 100vh;
+
+	background-image: url("../images/modal-bg.jpg");
+
+	background-position: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.close {
+	font-size: 500%;
 	position: absolute;
 	top: 0;
-	left: 95%;
-	margin-top: 10px;
+	left: 90%;
 }
 
 
