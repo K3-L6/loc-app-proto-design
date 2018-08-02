@@ -20,30 +20,41 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-sm navbar-light mb-5">
-
+	<nav class="navbar navbar-expand-xl navbar-light mb-5 sticky-top">
 
 		<a class="navbar-brand" href="login.html"> > LOC APP < </a>
 
-		<ul class="navbar-nav ml-auto">
+		<button class="navbar-toggler navbar-toggler-right"
+			type="button"
+			data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent"
+			aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-			<li class="nav-item">
-				<a class="nav-link" href="location.html">LOCATION</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="applicant.html">APPLICANT</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-					SETTINGS
-				</a>
-				<div class="dropdown-menu dropdown-menu-right">
-					<a class="dropdown-item" href="#">MY ACCOUNT</a>
-					<a class="dropdown-item" href="#">LOG OUT</a>
-				</div>
-			</li>
+		<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
 
-		</ul>
+				<li class="nav-item">
+					<a class="nav-link ml-md-5" href="location.html">LOCATION</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link ml-md-5" href="applicant.html">APPLICANT</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link ml-md-5 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						SETTINGS
+					</a>
+					<div class="dropdown-menu dropdown-menu-right text-center">
+						<a class="dropdown-item" href="#">MY ACCOUNT</a>
+						<a class="dropdown-item" href="#">LOG OUT</a>
+					</div>
+				</li>
+
+			</ul>
+		</div>
 
 	</nav>
 
@@ -52,14 +63,14 @@
 
 		<div class="row">
 
-			<div class="col">
+			<div class="col-xl-6">
 				<div class="form-group">
 					<input type="text" placeholder="Search applicant here" class="form-control text-center" id="search">
 				</div>
 			</div>
 
-			<div class="col">
-				<h1 class="display-4 text-center page-title">APPLICANT LIST</h1>
+			<div class="col-xl-6">
+				<h1 class="display-4 text-center page-title d-none d-xl-inline">APPLICANT LIST</h1>
 			</div>
 
 		</div>
@@ -77,11 +88,11 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td>1</td>
-					<td class="table-applicant-name">JOHN KENNETH LISING</td>
-					<td>ALABAMA</td>
-					<td class="text-info">VERIFICATION</td>
-					<td>
+					<td class="align-middle">1</td>
+					<td class="table-data-big align-middle">JOHN KENNETH LISING</td>
+					<td class="align-middle">ALABAMA</td>
+					<td class="text-info align-middle">VERIFICATION</td>
+					<td class="align-middle">
 						<button class="btn btn-dark rounded-0" data-toggle="modal" data-target="#applicantInformationModal">
 							<i class="fas fa-info"></i>
 						</button>
@@ -89,41 +100,41 @@
 				</tr>
 
 				<tr>
-					<td>2</td>
-					<td class="table-applicant-name">ERD RICO MANALO</td>
-					<td>ALAZKA</td>
+					<td class="align-middle">2</td>
+					<td class="table-data-big align-middle">ERD RICO MANALO</td>
+					<td class="align-middle">ALAZKA</td>
 					<td class="text-success">ON-BOARD</td>
-					<td>
+					<td class="align-middle">
 						<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
 					</td>
 				</tr>
 
 				<tr>
-					<td>3</td>
-					<td class="table-applicant-name">SILVIA	ROMERO</td>
-					<td>ARIZONA</td>
+					<td class="align-middle">3</td>
+					<td class="table-data-big align-middle">SILVIA	ROMERO</td>
+					<td class="align-middle">ARIZONA</td>
 					<td class="text-warning">INCOMPLETE</td>
-					<td>
+					<td class="align-middle">
 						<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
 					</td>
 				</tr>
 
 				<tr>
-					<td>4</td>
-					<td class="table-applicant-name">MARJORIE KNIGHT</td>
-					<td>ARKANSAS</td>
+					<td class="align-middle">4</td>
+					<td class="table-data-big align-middle">MARJORIE KNIGHT</td>
+					<td class="align-middle">ARKANSAS</td>
 					<td class="text-danger">DENIED</td>
-					<td>
+					<td class="align-middle">
 						<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
 					</td>
 				</tr>
 
 				<tr>
-					<td>5</td>
-					<td class="table-applicant-name">FLORA HOLT</td>
-					<td>ALABAMA</td>
+					<td class="align-middle">5</td>
+					<td class="table-data-big align-middle">FLORA HOLT</td>
+					<td class="align-middle">ALABAMA</td>
 					<td class="text-success">ON-BOARD</td>
-					<td>
+					<td class="align-middle">
 						<button class="btn btn-dark rounded-0"><i class="fas fa-info"></i></button>
 					</td>
 				</tr>
@@ -200,50 +211,50 @@
 								<tbody>
 
 									<tr>
-										<td class="table-data-big">BIRTH CERTIFICATE</td>
-										<td>
+										<td class="table-data-big align-middle">BIRTH CERTIFICATE</td>
+										<td class="align-middle">
 											<input type="checkbox" class="big-checkbox">
 										</td>
 									</tr>
 
 									<tr>
-										<td class="table-data-big">TRANSCRIPT OF RECORDS</td>
-										<td>
+										<td class="table-data-big align-middle">TRANSCRIPT OF RECORDS</td>
+										<td class="align-middle">
 											<input type="checkbox" class="big-checkbox">
 										</td>
 									</tr>
 
 									<tr>
-										<td class="table-data-big">NBI CLEARANCE</td>
-										<td>
+										<td class="table-data-big align-middle">NBI CLEARANCE</td>
+										<td class="align-middle">
 											<input type="checkbox" class="big-checkbox">
 										</td>
 									</tr>
 
 									<tr>
-										<td class="table-data-big">SSS MEMBERSHIP ID</td>
-										<td>
+										<td class="table-data-big align-middle">SSS MEMBERSHIP ID</td>
+										<td class="align-middle">
 											<input type="checkbox" class="big-checkbox">
 										</td>
 									</tr>
 
 									<tr>
-										<td class="table-data-big">PAG-IBIG MEMBERSHIP ID</td>
-										<td>
+										<td class="table-data-big align-middle">PAG-IBIG MEMBERSHIP ID</td>
+										<td class="align-middle">
 											<input type="checkbox" class="big-checkbox">
 										</td>
 									</tr>
 
 									<tr>
-										<td class="table-data-big">PHILHEALTH MEMBERSHIP ID</td>
-										<td>
+										<td class="table-data-big align-middle">PHILHEALTH MEMBERSHIP ID</td>
+										<td class="align-middle">
 											<input type="checkbox" class="big-checkbox">
 										</td>
 									</tr>
 
 									<tr>
-										<td class="table-data-big">BIR COMPLETE FORMS</td>
-										<td>
+										<td class="table-data-big align-middle">BIR COMPLETE FORMS</td>
+										<td class="align-middle">
 											<input type="checkbox" class="big-checkbox">
 										</td>
 									</tr>
@@ -272,17 +283,17 @@
 				<div class="modal-body p-4 text-center" id="result">
 					<!-- EMAIL ADDRESS OF THE APPLICANT -->
 					<h5 class="display-4">EMAIL ADDRESS</h5>
-					<h1 class="">kennlising23@gmail.com</h1>
+					<h1 class="value-data-big">kennlising23@gmail.com</h1>
 					<hr class="bg-white">
 
 					<!-- CONTACT NUMBER OF THE APPLICANT -->
 					<h5 class="display-4">CONTACT NUMBER</h5>
-					<h1 class="">09999999999</h1>
+					<h1 class="value-data-big">09999999999</h1>
 					<hr class="bg-white">
 
 					<!-- TARGET LOCATION OF THE APPLICANT -->
 					<h5 class="display-4">TARGET LOCATION</h5>
-					<h1 class="">ALABAMA</h1>
+					<h1 class="value-data-big">ALABAMA</h1>
 					<hr class="bg-white">
 
 					<!-- SUBMITED REQUIREMENT'S OF THIS APPLICANT -->
@@ -296,31 +307,31 @@
 						<tbody>
 
 							<tr>
-								<td class="table-data-big">BIRTH CERTIFICATE</td>
+								<td class="table-data-big align-middle">BIRTH CERTIFICATE</td>
 							</tr>
 
 							<tr>
-								<td class="table-data-big">TRANSCRIPT OF RECORDS</td>
+								<td class="table-data-big align-middle">TRANSCRIPT OF RECORDS</td>
 							</tr>
 
 							<tr>
-								<td class="table-data-big">NBI CLEARANCE</td>
+								<td class="table-data-big align-middle">NBI CLEARANCE</td>
 							</tr>
 
 							<tr>
-								<td class="table-data-big">SSS MEMBERSHIP ID</td>
+								<td class="table-data-big align-middle">SSS MEMBERSHIP ID</td>
 							</tr>
 
 							<tr>
-								<td class="table-data-big">PAG-IBIG MEMBERSHIP ID</td>
+								<td class="table-data-big align-middle">PAG-IBIG MEMBERSHIP ID</td>
 							</tr>
 
 							<tr>
-								<td class="table-data-big">PHILHEALTH MEMBERSHIP ID</td>
+								<td class="table-data-big align-middle">PHILHEALTH MEMBERSHIP ID</td>
 							</tr>
 
 							<tr>
-								<td class="table-data-big">BIR COMPLETE FORMS</td>
+								<td class="table-data-big align-middle">BIR COMPLETE FORMS</td>
 							</tr>
 
 						</tbody>
@@ -338,23 +349,23 @@
 						<tbody>
 
 							<tr>
-								<td class="table-data-big">ALABAMA</td>
+								<td class="table-data-big align-middle">ALABAMA</td>
 							</tr>
 
 							<tr>
-								<td class="table-data-big">ALASKA</td>
+								<td class="table-data-big align-middle">ALASKA</td>
 							</tr>
 
 							<tr>
-								<td class="table-data-big">ARIZONA</td>
+								<td class="table-data-big align-middle">ARIZONA</td>
 							</tr>
 
 							<tr>
-								<td class="table-data-big">ARKANSAS</td>
+								<td class="table-data-big align-middle">ARKANSAS</td>
 							</tr>
 
 							<tr>
-								<td class="table-data-big">CALIFORNIA</td>
+								<td class="table-data-big align-middle">CALIFORNIA</td>
 							</tr>
 
 						</tbody>
@@ -362,7 +373,7 @@
 					<hr class="bg-white">
 
 					<button class="btn btn-lg btn-block btn-dark">
-						SUBMIT ADDITIONAL REQUIREMENT
+						SUBMIT REQUIREMENT
 					</button>
 				</div>
 			</div>
